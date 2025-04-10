@@ -10,7 +10,7 @@ output_path=data_path+'../'+'albued_aug_imset/'
 # Resize and crop, is resize needed?
 img_transform = A.compose([
     A.SmallestMaxSize(max_size=Width, p=1.0),
-    A.RandomCenterCrop(height=Height, width=Width, p=1.0)
+    A.RandomCrop(height=Height, width=Width, p=1.0)
 ])
 
 # get all image ids and their labels
